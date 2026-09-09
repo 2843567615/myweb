@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人名片</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页面主内容：将个人名片放在视口中央 -->
+    <main class="business-card">
+        <!-- 使用内嵌 SVG 作为头像占位图，无需额外图片文件 -->
+        <div class="avatar" role="img" aria-label="个人头像">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+                <circle cx="60" cy="60" r="60" fill="#dbeafe" />
+                <circle cx="60" cy="45" r="20" fill="#2563eb" />
+                <path d="M25 101c5-22 18-33 35-33s30 11 35 33" fill="#2563eb" />
+            </svg>
+        </div>
+
+        <!-- 个人基本信息 -->
+        <h1>林知夏</h1>
+        <p class="job-title">品牌设计师</p>
+        <p class="introduction">专注于品牌视觉与数字体验设计</p>
+
+        <!-- 联系方式列表 -->
+        <address class="contact-list">
+            <a href="mailto:hello@example.com">
+                <span class="contact-icon" aria-hidden="true">✉</span>
+                hello@example.com
+            </a>
+            <a href="tel:+8613800000000">
+                <span class="contact-icon" aria-hidden="true">☎</span>
+                +86 138 0000 0000
+            </a>
+            <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+                <span class="contact-icon" aria-hidden="true">↗</span>
+                www.example.com
+            </a>
+        </address>
+    </main>
+</body>
+</html>
